@@ -67,22 +67,27 @@
          </fieldset>
          <fieldset>
           <legend>Цвет</legend>
-           <input type="radio" name="color" id="black" value="Черный">
-           <input type="radio" name="color" id="white" value="Белый">
-           <input type="radio" name="color" id="blue" value="Синий">
-           <input type="radio" name="color" id="red" value="Красный">
-           <input type="radio" name="color" id="pink" value="Розовый">
+           <input type="checkbox" name="black" id="filter-black">
+             <label for="filter-black">Черный</label>
+           <input type="checkbox" name="white" id="filter-white">
+             <label for="filter-white">Белый</label>
+           <input type="checkbox" name="blue" id="filter-blue">
+             <label for="filter-blue">Синий</label>
+           <input type="checkbox" name="red" id="filter-red">
+             <label for="filter-red">Красный</label>
+           <input type="checkbox" name="pink" id="filter-pink">
+             <label for="filter-pink">Розовый</label>
           </fieldset>
           <fieldset>
            <legend>Bluetooth</legend>
           <label>
-           <input type="radio" name="yes" value="Есть">Есть
+           <input type="radio" name="filter-bluetooth" value="Есть">Есть
           </label>
           <label>
-           <input type="radio" name="no" value="Нет">Нет
+           <input type="radio" name="filter-bluetooth" value="Нет">Нет
           </label>
        </fieldset>
-       <input type="submit" value="Показать">
+       <button type="submit">Показать</button>
      </form>
        <a class="botton-style" href="#">
          <img src="img/to-show.svg" alt="Показать">
