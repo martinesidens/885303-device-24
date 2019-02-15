@@ -6,7 +6,7 @@
   </head>
   <body>
    <header class="main-header">
-   <a class="header-logo">
+   <a class="header-logo" href="index.html">
        <img src="img/logo.svg" alt="Логотип Device">
      </a>
     <div class="header-user-navigation">
@@ -20,7 +20,8 @@
    </div>
     <nav class="main-navigation">
      <ul class="main-navigation-item">
-       <li><a href="catalog.html">Каталог товаров</a>
+       <li><a href="catalog.html">Каталог товаров</a></li>
+     </ul>
          <div class="catalog-item">
            <ul>
              <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
@@ -34,7 +35,8 @@
            <ul>
              <li><a href="quadcopters.html">Квадрокоптеры</a></li>
            </ul>
-       </li>
+        </div>
+      <ul>
        <li><a href="delivery.html">Доставка</a></li>
        <li><a href="warranty.html">Гарантия</a></li>
        <li><a href="contacts.html">Контакты</a></li>
@@ -43,6 +45,130 @@
    </header>
    <main>
      <h1 class="visually-hidden">Магазин девайсов Device</h1>
+     <section class="main-slaider">
+       <h2 class="visually-hidden">Самые популярные товары</h2>
+       <img src="img/slider.png" alt="Самая длинная палка для селфи">
+       <p class="main-slogan">Делай селфи,как Бен Стиллер!</p>
+       <p>Самая длинная палка для селфи доступна в нашем магазине.
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+       <a href="monopods.html">
+         <img src="img/more-botton" alt="Подробнее">
+       </a>
+       <ul class="switch-botton">
+         <li>
+           <a href="#" class="slaider-page-1">
+            <img src="img/slaider-botton.svg" alt="Слайд №1">
+          </a>
+         <li>
+           <a href="#" class="slaider-page-2">
+            <img src="img/slaider-botton.svg" alt="Слайд №2">
+          </a>
+         <li>
+           <a href="#" class="slaider-page-3">
+            <img src="img/slaider-botton.svg" alt="Слайд №3">
+           </a>
+         </ul>
+         <table class="slaider-table">
+           <tr>
+             <td>Длина палки</td>
+             <td>Вес палки</td>
+             <td>Материал</td>
+           </tr>
+           <tr>
+             <td>8,5 м</td>
+             <td>5 кг</td>
+             <td>Карбон</td>
+           </tr>
+         </table>
+     </section>
+     <section class="main-katalog">
+       <h2 class="visually-hidden">Каталог товаров</h2>
+       <ul class="image-katalog-item">
+         <li>
+           <a href="virtual-reality.html">
+               <img src="virtual-reality.png" alt="Виртуальная реальность">
+               <p>Виртуальная реальность</p>
+           </a>
+        </li>
+        <li>
+           <a href="monopods.html">
+               <img src="monopods.png" alt="Моноподы для селфи">
+               <p>Моноподы для селфи</p>
+           </a>
+        </li>
+        <li>
+          <a href="action-camers.html">
+              <img src="action-camers.png" alt="Экшн-камеры">
+              <p>Экшн-камеры</p>
+          </a>
+        </li>
+        <li>
+          <a href="fitness-trakers.html">
+              <img src="fitness-trakers.png" alt="Фитнес-браслеты">
+              <p>Фитнес-браслеты</p>
+          </a>
+       </li>
+       <li>
+         <a href="smart-watch.html">
+             <img src="smart-watch.png" alt="Умные часы">
+             <p>Умные часы</p>
+         </a>
+      </li>
+      <li>
+        <a href="quadcopters.html">
+            <img src="quadcopters.png" alt="Квадрокоптеры">
+            <p>Квадрокоптеры</p>
+        </a>
+       </li>
+      </ul>
+     </section>
+     <section class="support-slaider">
+       <ul class="support-slider-navigation">
+         <li>
+           <a class="support-slider-botton" href="#delivery">Доставка</a>
+         </li>
+         <li>
+           <a class="support-slider-botton" href="#warranty">Гарантия</a>
+         </li>
+         <li>
+           <a class="support-slider-botton" href="#credit">Кредит</a>
+         </li>
+       </ul>
+       <div class="support-slaider-item" id="delivery">
+         <h3>Доставка</h3>
+         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+           совершенно бесплатно! Ведь мы неплохо заработаем,
+           поднимая его на ваш этаж.
+         </p>
+         <img src="img/slaider-delivery.png" alt="Доставка">
+       </div>
+       <div class="support-slaider-item" id="warranty">
+         <h3>Гарантия</h3>
+         <p>Текст слайда Гарантия</p>
+         <img src="img/slaider-warranty.png" alt="Гарантия">
+       </div>
+       <div class="support-slaider-item" id="credit">
+         <h3>Кредит</h3>
+         <p>Текст слайда Кредит</p>
+         <img src="img/slaider-credit.png" alt="Кредит">
+       </div>
+     </section>
+     <div class="partners">
+       <ul>
+         <li>
+           <img class="partners-logo-style" src="img/logo-1.png" alt="Dj">
+         </li>
+         <li>
+           <img class="partners-logo-style" src="img/logo-2.png" alt="SPGadgets">
+         </li>
+         <li>
+           <img class="partners-logo-style" src="img/logo-3.png" alt="GoPro">
+         </li>
+         <li>
+           <img class="partners-logo-style" src="img/logo-4.png" alt="VIVE">
+         </li>
+       </ul>
+      </div>
      <section class="aboute-us">
        <h2>О нас</h2>
        <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -97,7 +223,7 @@
       </ul>
      <p>Тел: +7(495)495-95-95</p>
      <a class="footer-copyright" href="https://htmlacademy.ru">
-       <img src="img/htmlacademy-logo.svg">
+       <img src="img/htmlacademy-logo.svg" alt="HTMLAcademy">
      </a>
    </section>
   </footer>
