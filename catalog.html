@@ -13,7 +13,8 @@
       <ul>
         <li>Поиск по сайту</li>
         <li><a class="login-link" href="#">Войти</a></li>
-        <li><a class="login-link" href="#">Выйти</a></li>
+        <li><a class="logout-link hidden" href="#">Выйти</a></li>
+        <li><a class="profil-link hidden" href="#">User</a></li>
         <li><a class="compare-link" href="#">Сравнить</a></li>
         <li><a class="basket-link" href="#">Корзина</a></li>
       </ul>
@@ -50,17 +51,9 @@
        <li><a href="catalog.html">Каталог товаров</a></li>
        <li class="monopods-current">Моноподы для селфи</li>
      </ol>
-     <div class="background-navigation">
-       <p>Фильтр:</p>
-       <p>Сортировка:</p>
-     <ul>
-       <li><a href="#">По цене</a></li>
-       <li><a href="#">По типу</a></li>
-       <li><a href="#">По популярности</a></li>
-     </ul>
-     </div>
      <section class="filters">
-       <form action="#" method="post">
+       <h2>Фильтр:</h2>
+       <form action="https://echo.htmlacademy.ru" method="post">
          <fieldset>
           <legend>Стоимость</legend>
            0<input type="range" id="range-price" min="0" max="5000">5000
@@ -77,8 +70,8 @@
              <label for="filter-red">Красный</label>
            <input type="checkbox" name="pink" id="filter-pink">
              <label for="filter-pink">Розовый</label>
-          </fieldset>
-          <fieldset>
+         </fieldset>
+         <fieldset>
            <legend>Bluetooth</legend>
           <label>
            <input type="radio" name="filter-bluetooth" value="Есть">Есть
@@ -86,23 +79,29 @@
           <label>
            <input type="radio" name="filter-bluetooth" value="Нет">Нет
           </label>
-       </fieldset>
-       <button type="submit">Показать</button>
-     </form>
-       <a class="botton-style" href="#">
-         <img src="img/to-show.svg" alt="Показать">
-       </a>
+        </fieldset>
+       <button type="submit"class="btn-style">Показать</button>
+      </form>
      </section>
      <section class="catalog">
        <h2 class="visually-hidden">Список моноподов для селфи</h2>
+       <div class="sorting" class="vissualy-hidden">
+         <input type="radio" name="sorting-btn" id="price">
+         <input type="radio" name="sorting-btn" id="type">
+         <input type="radio" name="sorting-btn" id="popularity">
+       </div>
+       <div class="sorting-control">
+         <label for="price">По цене</label>
+         <label for="type">По типу</label>
+         <label for="popularity">По популярности</label>
+       </div>
        <ul class="catalog-list">
          <li class="catalog-item">
            <div class="item-menu">
              <img src="img/amateur-selfi-stick.jpg" width="360" height="380"
                alt="Любительская селфи-палка">
-               <a class="button-style" href="#">В корзину</a>
-               <button type="button" value="Добавить к сравнению">
-                 Добавить к сравнению</button>
+               <button type="button" class="btn-style">В корзину</button>
+               <button type="button">Добавить к сравнению</button>
            </div>
            <p class="catalog-item-title">Любительская селфи-палка</p>
            <p class="catalog-item-price">500 руб.</p>
@@ -111,9 +110,8 @@
            <div class="item-menu">
              <img src="img/profi-selfi-stick.jpg" width="360" height="380"
                alt="Профессиональная селфи-палка">
-               <a class="button-style" href="#">В корзину</a>
-               <button type="button" value="Добавить к сравнению">
-                 Добавить к сравнению</button>
+               <button type="button" class="btn-style">В корзину</button>
+               <button type="button">Добавить к сравнению</button>
            </div>
            <p class="catalog-item-title">Профессиональная селфи-палка</p>
            <p class="catalog-item-price">1 500 руб.</p>
@@ -122,8 +120,8 @@
            <div class="item-menu">
              <img src="img/unsinkable-selfi-stick.jpg" width="360" height="380"
                alt="Непотопляемая селфи-палка">
-               <a class="button-style" href="#">В корзину</a>
-               <button type="button" value="Добавить к сравнению">
+               <button type="button" class="btn-style">В корзину</button>
+               <button type="button">Добавить к сравнению</button>
                  Добавить к сравнению</button>
            </div>
            <p class="catalog-item-title">Непотопляемая селфи-палка</p>
@@ -133,21 +131,23 @@
            <div class="item-menu">
              <img src="img/follow-me-selfi-stick.jpg" width="360" height="380"
                alt="Селфи-палка «Следуй за мной»">
-               <a class="button-style" href="#">В корзину</a>
-               <button type="button" value="Добавить к сравнению">
+               <button type="button" class="btn-style">В корзину</button>
+               <button type="button">Добавить к сравнению</button>
                  Добавить к сравнению</button>
            </div>
            <p class="catalog-item-title">Селфи-палка «Следуй за мной»</p>
            <p class="catalog-item-price">4 900 руб.</p>
          </li>
         </ul>
-        <span class="botton botton-back">Назад</span>
-        <span class="botton botton-next">Вперед</span>
-        <ul class="sorting-navigation-catalog">
+        <div class="sorting-list"
+        <button type="button" class="button-back">Назад</button>
+        <ul class="sorting-list-item">
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
         </ul>
+        <button type="button" class="button-forward">Вперед</button>
+        <div>
     </section>
    </main>
    <footer class="main-footer">
@@ -170,6 +170,8 @@
     <section class="footer-user-navigation">
       <ul class="footer-user-navigation-item">
         <li><a class="login-link" href="#">Войти</a></li>
+        <li><a class="logout-link hidden" href="#">Выйти</a></li>
+        <li><a class="profil-link hidden" href="#">User</a></li>
         <li><a class="compare-link" href="#">Сравнить</a></li>
         <li><a class="basket-link" href="#">Корзина</a></li>
       </ul>
