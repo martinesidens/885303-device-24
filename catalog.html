@@ -56,7 +56,22 @@
        <form action="https://echo.htmlacademy.ru" method="post">
          <fieldset>
           <legend>Стоимость</legend>
-           0<input type="range" id="range-price" min="0" max="5000">5000
+           <div class="range-filter">
+             <div class="range-controls">
+               <div class="scale">
+                 <div class="bar">
+                 </div>
+               </div>
+               <div class="toggle toggle-min"></div>
+               <div class="toggle toggle-max"></div>
+             </div>
+             <div class="price-controls">
+               <label class="min-price" for="min">от</label>
+               <input type="text" id="min" name="min-price" value="0">
+               <label class="max-price" for="max">от</label>
+               <input type="text" id="max" name="max-price" value="15000">
+             </div>
+           </div>
          </fieldset>
          <fieldset>
           <legend>Цвет</legend>
@@ -84,70 +99,81 @@
       </form>
      </section>
      <section class="catalog">
-       <h2 class="visually-hidden">Список моноподов для селфи</h2>
-       <div class="sorting" class="vissualy-hidden">
-         <input type="radio" name="sorting-btn" id="price">
-         <input type="radio" name="sorting-btn" id="type">
-         <input type="radio" name="sorting-btn" id="popularity">
-       </div>
        <div class="sorting-control">
-         <label for="price">По цене</label>
-         <label for="type">По типу</label>
-         <label for="popularity">По популярности</label>
+         <h2>Сортировка:</h2>
+        <div class="sorting-type">
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По популярности</a>
+        </div>
+        <div class="sorting-up-down">
+          <a class="up" href="#">^</a>
+          <a class="down" href="#">v</a>
+        </div>
        </div>
        <ul class="catalog-list">
          <li class="catalog-item">
            <div class="item-menu">
              <img src="img/amateur-selfi-stick.jpg" width="360" height="380"
                alt="Любительская селфи-палка">
-               <button type="button" class="btn-style">В корзину</button>
-               <button type="button">Добавить к сравнению</button>
+               <p class="catalog-item-title">Любительская селфи-палка</p>
+               <p class="catalog-item-price">500 руб.</p>
+              <div class="catalog-item-navigation">
+                   <button type="button" class="btn-style">В корзину</button>
+                   <button type="button">Добавить к сравнению</button>
+                     Добавить к сравнению</button>
+              </div>
            </div>
-           <p class="catalog-item-title">Любительская селфи-палка</p>
-           <p class="catalog-item-price">500 руб.</p>
          </li>
          <li class="catalog-item">
            <div class="item-menu">
              <img src="img/profi-selfi-stick.jpg" width="360" height="380"
                alt="Профессиональная селфи-палка">
-               <button type="button" class="btn-style">В корзину</button>
-               <button type="button">Добавить к сравнению</button>
+               <p class="catalog-item-title">Профессиональная селфи-палка</p>
+               <p class="catalog-item-price">1 500 руб.</p>
+              <div class="catalog-item-navigation">
+                  <button type="button" class="btn-style">В корзину</button>
+                  <button type="button">Добавить к сравнению</button>
+                    Добавить к сравнению</button>
+              </div>
            </div>
-           <p class="catalog-item-title">Профессиональная селфи-палка</p>
-           <p class="catalog-item-price">1 500 руб.</p>
          </li>
          <li class="catalog-item">
            <div class="item-menu">
              <img src="img/unsinkable-selfi-stick.jpg" width="360" height="380"
                alt="Непотопляемая селфи-палка">
-               <button type="button" class="btn-style">В корзину</button>
-               <button type="button">Добавить к сравнению</button>
+               <p class="catalog-item-title">Непотопляемая селфи-палка</p>
+               <p class="catalog-item-price">2 500 руб.</p>
+             <div class="catalog-item-navigation">
+                 <button type="button" class="btn-style">В корзину</button>
+                 <button type="button">Добавить к сравнению</button>
                  Добавить к сравнению</button>
-           </div>
-           <p class="catalog-item-title">Непотопляемая селфи-палка</p>
-           <p class="catalog-item-price">2 500 руб.</p>
+            </div>
+          </div>
          </li>
          <li class="catalog-item">
            <div class="item-menu">
              <img src="img/follow-me-selfi-stick.jpg" width="360" height="380"
                alt="Селфи-палка «Следуй за мной»">
-               <button type="button" class="btn-style">В корзину</button>
-               <button type="button">Добавить к сравнению</button>
-                 Добавить к сравнению</button>
+               <p class="catalog-item-title">Селфи-палка «Следуй за мной»</p>
+               <p class="catalog-item-price">4 900 руб.</p>
+            <div class="catalog-item-navigation">
+              <button type="button" class="btn-style">В корзину</button>
+              <button type="button">Добавить к сравнению</button>
+              Добавить к сравнению</button>
            </div>
-           <p class="catalog-item-title">Селфи-палка «Следуй за мной»</p>
-           <p class="catalog-item-price">4 900 руб.</p>
+         </div>
          </li>
         </ul>
-        <div class="sorting-list"
-        <button type="button" class="button-back">Назад</button>
-        <ul class="sorting-list-item">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-        </ul>
-        <button type="button" class="button-forward">Вперед</button>
-        <div>
+        <div class="sorting-list">
+        <a href="#" class="button-back">Назад</a>
+         <ul class="sorting-list-item">
+           <li><a href="#">1</a></li>
+           <li><a href="#">2</a></li>
+           <li><a href="#">3</a></li>
+         </ul>
+        <a href="#" class="button-forward">Вперед</a>
+      </div>
     </section>
    </main>
    <footer class="main-footer">
