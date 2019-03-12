@@ -1,26 +1,39 @@
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   src:
-    local("Gilroy-ExtraBold"),
-    url("gilroyextrabold.woff") format("woff");
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+/*
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src:
-    local("Open Sans"),
     url("gilroylight.woff") format("woff");
-}
+}*/
 
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -62,11 +75,69 @@ a {
   height: 38px;
 }
 
-.header-user-navigation a {
+/*.header-user-navigation a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
+}*/
+
+.header-link {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #000;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+.header-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+
+.header-link-login::after {
+  background: red;
+}
+
+.header-link-logout::after {
+  background: green;
+}
+
+.header-link-user::after {
+  background: gold;
+}
+
+.header-link-basket::after {
+  background: #fff;
+}
+
+.header-link-compere::after {
+  background: grey;
+}
+
+
+.nav-submenu:hover + .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+}
+
+.header-link:hover {
+  opacity: 0.6;
+}
+
+.header-link:active {
+  opacity: 0.3;
 }
 
 .footer-user-navigation a {
@@ -77,10 +148,17 @@ a {
 
 }
 
-nav a {
+/*nav a {
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
+}*/
+
+.main-navigation-link {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000;
 }
 
 .catalog-item a {
