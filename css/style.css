@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Gilroy-ExtraBold"),
+    url("gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Open Sans"),
+    url("gilroylight.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-style {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  background-size: 220px 2px;
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.main-header {
+  background-color: rgba(247, 226, 150, 1)
+}
+
+.main-footer  {
+
+  background-color: rgba(70, 70, 70, 1)
+}
+
+.main-footer p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.header-logo img {
+  width: 200px;
+  height: 38px;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: 38px;
+}
+
+.header-user-navigation a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.footer-user-navigation a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+nav a {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-user-navigation li,
+.main-navigation li {
+  list-style: none;
+}
+
+.footer-social li,
+.footer-user-navigation li,
+.social-button li {
+  list-style: none;
+}
+
+.footer-social a {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+
+/* .login-link::before {
+  content: "";
+  background: url("img/user.svg") no-repeat;
+} */
+
+.info h2,
+.page-title h1 {
+  font-size: 47px;
+  line-height: 48px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.info p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.breadcrumbs li {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(183, 183, 183, 1);
+  list-style: none;
+}
+
+.filters form {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+form legend {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+form label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog p {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
