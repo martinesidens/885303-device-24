@@ -9,55 +9,61 @@
   <body>
     <header class="main-header">
     <a class="header-logo" href="index.html">
-        <img src="img/logo-device.svg" alt="Логотип Device">
+        <img src="img\logo-device.svg" alt="Логотип Device">
       </a>
      <div class="header-user-navigation">
       <ul>
-        <li>Поиск по сайту</li>
-        <li><a class="login-link" href="#">Войти</a></li>
-        <li><a class="logout-link hidden" href="#">Выйти</a></li>
-        <li><a class="profil-link hidden" href="#">User</a></li>
-        <li><a class="compare-link" href="#">Сравнить</a></li>
-        <li><a class="basket-link" href="#">Корзина</a></li>
+        <li>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" id="search" placeholder="Поиск по сайту">
+            <label for="search">Поиск по сайту</label>
+            <button type="submit" class="btn-search">Найти</button>
+          </form>
+        </li>
+        <li><a class="header-link header-link-login" href="#">Войти</a></li>
+        <li><a class="header-link header-link-logout header-link-hidden" href="#">Выйти</a></li>
+        <li><a class="header-link header-link-user header-link-hidden" href="#">User</a></li>
+        <li><a class="header-link header-link-compere " href="#">Сравнить</a></li>
+        <li><a class="header-link header-link-basket " href="#">Корзина</a></li>
       </ul>
     </div>
      <nav class="main-navigation">
       <ul class="main-navigation-item">
-        <li><a href="catalog.html">Каталог товаров</a></li>
-      </ul>
-          <div class="catalog-item">
+        <li>
+          <a class="main-navigation-link nav-submenu" href="catalog.html">Каталог товаров</a>
+          <div class="submenu">
             <ul>
-              <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
-              <li><a href="monopods.html">Моноподы для селфи</a></li>
-              <li><a href="action-camers.html">Экшн-камеры</a></li>
+              <li><a class="submenu-link" href="virtual-reality.html">Виртуальная реальность</a></li>
+              <li><a class="submenu-link" href="monopods.html">Моноподы для селфи</a></li>
+              <li><a class="submenu-link" href="action-camers.html">Экшн-камеры</a></li>
             </ul>
             <ul>
-              <li><a href="fitness-trakers.html">Фитнес-браслеты</a></li>
-              <li><a href="smart-watch.html">Умные часы</a></li>
+              <li><a class="submenu-link" href="fitness-trakers.html">Фитнес-браслеты</a></li>
+              <li><a class="submenu-link" href="smart-watch.html">Умные часы</a></li>
             </ul>
             <ul>
-              <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+              <li><a class="submenu-link" href="quadcopters.html">Квадрокоптеры</a></li>
             </ul>
          </div>
-       <ul>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        </li>
+        <li><a class="main-navigation-link" href="delivery.html">Доставка</a></li>
+        <li><a class="main-navigation-link" href="warranty.html">Гарантия</a></li>
+        <li><a class="main-navigation-link" href="contacts.html">Контакты</a></li>
       </ul>
      </nav>
     </header>
    <main>
      <h1 class="page-title">Моноподы для селфи</h1>
      <ol class="breadcrumbs">
-       <li><a href="index.html">Главная</a></li>
-       <li><a href="catalog.html">Каталог товаров</a></li>
-       <li class="monopods-current">Моноподы для селфи</li>
+       <li><a class="breadcrumbs-token" href="index.html">Главная</a></li>
+       <li><a  class="breadcrumbs-token"href="catalog.html">Каталог товаров</a></li>
+       <li class="breadcrumbs-token monopods-current">Моноподы для селфи</li>
      </ol>
      <section class="filters">
        <h2>Фильтр:</h2>
        <form action="https://echo.htmlacademy.ru" method="get">
          <fieldset>
-          <legend>Стоимость</legend>
+          <legend class="filter-name-block">Стоимость</legend>
            <div class="range-filter">
              <div class="range-controls">
                <div class="scale">
@@ -76,24 +82,24 @@
            </div>
          </fieldset>
          <fieldset>
-          <legend>Цвет</legend>
+          <legend class="filter-name-block">Цвет</legend>
            <input type="checkbox" name="black" id="filter-black">
-             <label for="filter-black">Черный</label>
+             <label class="form-content-name" for="filter-black">Черный</label>
            <input type="checkbox" name="white" id="filter-white">
-             <label for="filter-white">Белый</label>
+             <label class="form-content-name" for="filter-white">Белый</label>
            <input type="checkbox" name="blue" id="filter-blue">
-             <label for="filter-blue">Синий</label>
+             <label class="form-content-name" for="filter-blue">Синий</label>
            <input type="checkbox" name="red" id="filter-red">
-             <label for="filter-red">Красный</label>
+             <label class="form-content-name" for="filter-red">Красный</label>
            <input type="checkbox" name="pink" id="filter-pink">
-             <label for="filter-pink">Розовый</label>
+             <label class="form-content-name" for="filter-pink">Розовый</label>
          </fieldset>
          <fieldset>
-           <legend>Bluetooth</legend>
-          <label>
+           <legend class="filter-name-block">Bluetooth</legend>
+          <label class="form-content-name">
            <input type="radio" name="filter-bluetooth" value="Есть">Есть
           </label>
-          <label>
+          <label class="form-content-name">
            <input type="radio" name="filter-bluetooth" value="Нет">Нет
           </label>
         </fieldset>
@@ -181,33 +187,33 @@
    <footer class="main-footer">
     <div class="footer-contacts">
      <a class="footer-logo">
-       <img src="img/logo-device.svg" alt="Логотип Device">
+       <img src="img/logo-footer.png" alt="Логотип Device">
      </a>
      <p>г. Москва, ул. Строителей, 15</p>
    </div>
      <ul class="footer-social">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a class="footer-social-item" href="delivery.html">Доставка</a></li>
+        <li><a class="footer-social-item" href="warranty.html">Гарантия</a></li>
+        <li><a class="footer-social-item" href="contacts.html">Контакты</a></li>
      </ul>
      <ul class="social-button">
-       <li><a href="#">Вконтакте</a></li>
-       <li><a href="#">Фейсбук</a></li>
-       <li><a href="#">Инстаграм</a></li>
+       <li><a class="social-button-item social-button-vk" href="#" aria-lable="Вконтакте">VK</a></li>
+       <li><a class="social-button-item social-button-fb" href="#" aria-label="Фейсбук">FB</a></li>
+       <li><a class="social-button-item social-button-int" href="#" aria-label="Инстаграм">IN</a></li>
      </ul>
-    <section class="footer-user-navigation">
-      <ul class="footer-user-navigation-item">
-        <li><a class="login-link" href="#">Войти</a></li>
-        <li><a class="logout-link hidden" href="#">Выйти</a></li>
-        <li><a class="profil-link hidden" href="#">User</a></li>
-        <li><a class="compare-link" href="#">Сравнить</a></li>
-        <li><a class="basket-link" href="#">Корзина</a></li>
+    <div class="footer-user-navigation">
+      <ul>
+        <li><a class="footer-link footer-link-login" href="#">Войти</a></li>
+        <li><a class="footer-link footer-link-logout footer-link-hidden" href="#">Выйти</a></li>
+        <li><a class="footer-link footer-link-user footer-link-hidden" href="#">User</a></li>
+        <li><a class="footer-link footer-link-compere " href="#">Сравнить</a></li>
+        <li><a class="footer-link footer-link-basket " href="#">Корзина</a></li>
       </ul>
      <p>Тел: +7(495)495-95-95</p>
      <a class="footer-copyright" href="https://htmlacademy.ru">
-       <img src="img/logo-html.svg" alt="HTMLAcademy">
+       <p><img class="footer-copyright-link" src="img/logo-html.svg" alt="HTMLAcademy"></p>
      </a>
-   </section>
+   </div>
   </footer>
  </body>
 </html>
