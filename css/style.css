@@ -289,7 +289,7 @@ a {
   color: #fff;
 }
 .social-button {
-  position:relative;
+  position: relative;
 }
 
 .social-button::after {
@@ -382,14 +382,14 @@ a {
 }
 
 .filter-name-block {
-  letter-spacing: 0.1;
+  letter-spacing: 0.1em;
 }
 
 .form-content-name {
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 14px;
   line-height: 40px;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1em;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -400,17 +400,131 @@ a {
 }
 
 .brands li {
-  list-style:none;
+  list-style: none;
 }
 
 .catalog-item-title {
-  letter-spacing: 0.1;
+  letter-spacing: 0.1em;
 }
 
 .catalog-item-price {
   font-family: "Gilroy Light", "Arial", sans-serif;
   font-weight: 16px;
   line-height: 24px;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1em;
   color: #464646;
+}
+
+.number {
+  font-size: 179.2px;
+  line-height: 179.2px;
+  letter-spacing: 0.1em;
+  color: #464646;
+}
+
+.main-slogan {
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.add-slogan {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #464646;
+}
+
+.first-line td {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #464646;
+}
+
+.second-line td {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  color: #464646;
+}
+
+.main-katalog li {
+  list-style: none;
+}
+
+.image-katalog-item {
+  width: 160px;
+  height: 160px;
+  background-color: #f0c52e;
+  opacity: 0.5;
+}
+
+.name-katalog-item {
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.headline-slider {
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  color: #000;
+}
+
+.text-slider {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #464646;
+}
+
+.services-slide-1 {
+  background-color: #e5e5e5;
+  /* background-image: url("../img/delivery.svg") 100% 50%; */
+}
+
+.services-slide-2 {
+  background-color: #e5e5e5;
+  /* background-image: url("../img/warranty.svg") 100% 50%; */
+}
+
+.services-slide-3 {
+  background-color: #e5e5e5;
+  /* background-image: url("../img/credit.svg") 100% 50%; */
+}
+
+/* .close-btn {
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/modal-close.svg");
+} */
+
+.sorting-list-item li,
+.sorting-type li,
+.sorting-up-down li {
+  list-style: none;
+}
+
+.filters-element {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.sort-element {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #464646;
+}
+
+.catalog ul {
+  list-style: none;
 }
