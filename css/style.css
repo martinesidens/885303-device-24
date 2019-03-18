@@ -528,3 +528,11 @@ a {
 .catalog ul {
   list-style: none;
 }
+
+.brands-link {
+  opacity: 0.2;
+}
+
+.brands-link:hover {
+  opacity: 1;
+}
