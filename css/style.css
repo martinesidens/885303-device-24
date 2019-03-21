@@ -293,6 +293,7 @@ a {
   line-height: 48px;
   letter-spacing: 0.1em;
   color: rgba(0, 0, 0, 1);
+  padding-bottom: 40px;
 }
 
 .info p,
@@ -301,6 +302,14 @@ a {
   font-size: 15px;
   line-height: 30px;
   color: rgba(70, 70, 70, 1);
+}
+
+.contacts {
+  width: 560px;
+}
+
+.about-us {
+  width: 480px;
 }
 
 .main-footer p {
@@ -583,7 +592,6 @@ a {
 
 .brands-link {
  position: relative;
-  top: 0px;
 }
 
 .brands-link-hover {
@@ -598,6 +606,8 @@ a:hover .brands-link-hover {
 .brands-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .main-header {
@@ -605,7 +615,6 @@ a:hover .brands-link-hover {
   flex-direction: column;
   margin-top: 40px;
   padding-bottom: 100px;
-
 }
 
 .header-user-navigation-link {
@@ -637,12 +646,18 @@ a:hover .brands-link-hover {
 
 .header-logo {
   margin-top: -20px;
+  display: block;
 }
 
 .info {
   display: flex;
-  border: solid 1px #000;
+  justify-content: space-between;
+  margin-bottom: 90px;
 }
+
+.write-to-use {
+  padding-top: 75px;
+  }
 
 .btn-style{
   display: inline-block;
