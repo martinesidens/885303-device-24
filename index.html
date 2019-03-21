@@ -7,7 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <div class="wrap">
    <header class="main-header">
+     <div class="wrapper">
    <a class="header-logo" href="index.html">
        <img src="img\logo-device.svg" alt="Логотип Device">
      </a>
@@ -15,9 +17,8 @@
      <ul class="header-user-navigation-link">
        <li>
          <form class="search" action="https://echo.htmlacademy.ru" method="get">
-           <input type="search" id="search" placeholder="Поиск по сайту">
-           <label for="search" area-label="Поиск по сайту"></label>
-           <button type="submit" class="btn-search">Найти</button>
+           <input type="search" id="search" class="search-input" placeholder="Поиск по сайту">
+           <button type="submit" class="search-button">Найти</button>
          </form>
        </li>
        <li><a class="header-link header-link-login" href="#">Войти</a></li>
@@ -27,10 +28,10 @@
        <li><a class="header-link header-link-basket " href="#">Корзина</a></li>
      </ul>
    </div>
-    <nav class="main-navigation">
+     <nav class="main-navigation">
      <ul class="main-navigation-item">
-       <li>
-         <a class="main-navigation-link nav-submenu" href="catalog.html">Каталог товаров</a>
+       <li class="nav-submenu main-navigation-catalog">
+         <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
          <div class="submenu">
            <ul>
              <li><a class="submenu-link" href="virtual-reality.html">Виртуальная реальность</a></li>
@@ -46,31 +47,35 @@
            </ul>
         </div>
        </li>
-       <li><a class="main-navigation-link" href="delivery.html">Доставка</a></li>
-       <li><a class="main-navigation-link" href="warranty.html">Гарантия</a></li>
-       <li><a class="main-navigation-link" href="contacts.html">Контакты</a></li>
+       <li class="main-navigation-delivery"><a class="main-navigation-link" href="delivery.html">Доставка</a></li>
+       <li class="main-navigation-warranty"><a class="main-navigation-link" href="warranty.html">Гарантия</a></li>
+       <li class="main-navigation-contacts"><a class="main-navigation-link" href="contacts.html">Контакты</a></li>
      </ul>
     </nav>
+  </div>
    </header>
+ </div>
    <main>
+    <div class="wrap">
+      <div class="wrapper">
      <h1 class="visually-hidden">Магазин девайсов Device</h1>
      <section class="main-slider">
        <h2 class="visually-hidden">Самые популярные товары</h2>
-         <input type="radio" name="slider-1" class="hidden" id="btn-1">
-         <input type="radio" name="slider-1" class="hidden" id="btn-2">
-         <input type="radio" name="slider-1" class="hidden" id="btn-3">
+         <input type="radio" name="slider-1" class="visually-hidden" id="btn-1">
+         <input type="radio" name="slider-1" class="visually-hidden" id="btn-2">
+         <input type="radio" name="slider-1" class="visually-hidden" id="btn-3">
        <div class="slider-1-botton">
         <label for="btn-1"></label>
         <label for="btn-2"></label>
         <label for="btn-3"></label>
        </div>
-       <div class="slide-1">
+       <div class="slider">
         <p>
          <img src="img/slider-1.png" alt="Самая длинная палка для селфи">
         </p>
-        <div class="slaider-item">
+        <div class="slider-item">
         <p class="number">01</p>
-       <strong class="main-slogan">Делай селфи,как Бен Стиллер!</strong>
+       <strong class="main-slogan">Делай селфи, как Бен Стиллер!</strong>
        <p class="add-slogan">Самая длинная палка для селфи доступна в нашем магазине.
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
        <a href="monopods.html" class="btn-style">Подробнее</a>
@@ -88,7 +93,8 @@
         </table>
        </div>
      </div>
-       <div class="slide-2">
+   </div>
+       <!-- <div class="slider">
         <p>
          <img src="img/slider-2.png" alt="Мотивирующий фитнес-браслет">
         </p>
@@ -108,7 +114,7 @@
          </table>
        </div>
      </div>
-       <div class="slide-3">
+       <div class="slider">
         <p>
          <img src="img/slider-3.png" alt="Квадрокоптер">
         </p>
@@ -129,49 +135,50 @@
          </tr>
        </table>
        </div>
-     </div>
+     </div> -->
      </section>
      <section class="main-сatalog">
        <h2 class="visually-hidden">Каталог товаров</h2>
        <ul class="сatalog-item">
          <li>
            <a class="сatalog-item-link" href="virtual-reality.html">
-               <p class="image-сatalog-item"><img class="ikon-catalog-item" src="img/virtual-reality.svg" alt="Виртуальная реальность"></p>
+               <p class="image-сatalog-item"><img class="icon-catalog-item" src="img/virtual-reality.svg" alt="Виртуальная реальность"></p>
                <p class="name-сatalog-item">Виртуальная реальность</p>
            </a>
         </li>
         <li>
            <a class="сatalog-item-link" href="monopods.html">
-               <p class="image-сatalog-item"><img class="ikon-catalog-item" src="img/monopods.svg" alt="Моноподы для селфи"></p>
+               <p class="image-сatalog-item"><img class="icon-catalog-item" src="img/monopods.svg" alt="Моноподы для селфи"></p>
                <p class="name-сatalog-item">Моноподы для селфи</p>
            </a>
         </li>
         <li>
           <a class="сatalog-item-link" href="action-camers.html">
-              <p class="image-сatalog-item"><img class="ikon-catalog-item" src="img/action-camers.svg" alt="Экшн-камеры"></p>
+              <p class="image-сatalog-item"><img class="icon-catalog-item" src="img/action-camers.svg" alt="Экшн-камеры"></p>
               <p class="name-сatalog-item">Экшн-камеры</p>
           </a>
         </li>
         <li>
           <a class="сatalog-item-link" href="fitness-trakers.html">
-              <p class="image-сatalog-item"><img class="ikon-catalog-item" src="img/fitness-trakers.svg" alt="Фитнес-браслеты"></p>
+              <p class="image-сatalog-item"><img class="icon-catalog-item" src="img/fitness-trakers.svg" alt="Фитнес-браслеты"></p>
               <p class="name-сatalog-item">Фитнес-браслеты</p>
           </a>
        </li>
        <li>
          <a class="сatalog-item-link" href="smart-watch.html">
-             <p class="image-сatalog-item"><img class="ikon-catalog-item" src="img/smart-watch.svg" alt="Умные часы"></p>
+             <p class="image-сatalog-item"><img class="icon-catalog-item" src="img/smart-watch.svg" alt="Умные часы"></p>
              <p class="name-сatalog-item">Умные часы</p>
          </a>
       </li>
       <li>
         <a class="сatalog-item-link" href="quadcopters.html">
-            <p class="image-сatalog-item"><img class="ikon-catalog-item" src="img/quadcopters.svg" alt="Квадрокоптеры"></p>
+            <p class="image-сatalog-item"><img class="icon-catalog-item" src="img/quadcopters.svg" alt="Квадрокоптеры"></p>
             <p class="name-сatalog-item">Квадрокоптеры</p>
         </a>
        </li>
       </ul>
      </section>
+   </div>
      <section class="services-slider">
        <h2 class="visually-hidden">Сервисы</h2>
        <div class="visually-hidden">
@@ -179,11 +186,14 @@
          <input type="radio" name="services" id="warranty">
          <input type="radio" name="services" id="credit">
        </div>
+       <div class="left-side-slider">
        <div  class="btn-style">
          <label for="#delivery">Доставка</label>
          <label for="#warranty">Гарантия</label>
          <label for="#credit">Кредит</label>
        </div>
+     </div>
+     <div class="right-side-slider">
        <div class="services-slide-1">
          <h3 class="headline-slider">Доставка</h3>
          <p class="text-slider">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -201,28 +211,34 @@
          <p class="text-slider">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
             наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
        </div>
+     </div>
+    <div class="wrap">
      </section>
      <div class="brands">
        <h2 class="visually-hidden">Партнеры</h2>
-       <ul>
-         <li>
+       <ul class="brands-container">
+         <li class="brands-link">
            <a href="#">
-            <img class="brands-logo-style brands-link" src="img/logo-1.jpg" alt="Dj">
-          </a>
-         </li>
-         <li>
-           <a href="#">
-             <img class="brands-logo-style brands-link" src="img/logo-2.jpg" alt="SPGadgets">
+             <img class="brands-logo-style brands-logo" src="img/logo-1.jpg" alt="Dj">
+             <img class="brands-logo-style brands-link-hover" src="img/logo-1-active.jpg" alt="Dj">
            </a>
          </li>
-         <li>
+         <li class="brands-link">
            <a href="#">
-             <img class="brands-logo-style brands-link" src="img/logo-3.jpg" alt="GoPro">
+             <img class="brands-logo-style brands-logo" src="img/logo-2.jpg" alt="SPGadgets">
+             <img class="brands-logo-style brands-link-hover" src="img/logo-2-active.jpg" alt="SPGadgets">
            </a>
          </li>
-         <li>
+         <li class="brands-link">
            <a href="#">
-              <img class="brands-logo-style brands-link" src="img/logo-4.jpg" alt="VIVE">
+             <img class="brands-logo-style brands-logo" src="img/logo-3.jpg" alt="GoPro">
+             <img class="brands-logo-style brands-link-hover" src="img/logo-3-active.jpg" alt="GoPro">
+           </a>
+         </li>
+         <li class="brands-link">
+           <a href="#">
+              <img class="brands-logo-style brands-logo" src="img/logo-4.jpg" alt="VIVE">
+              <img class="brands-logo-style brands-link-hover" src="img/logo-4-active.jpg" alt="VIVE">
            </a>
          </li>
        </ul>
@@ -255,6 +271,7 @@
     </div>
     </section>
    </main>
+  <div class="wrap">
    <footer class="main-footer">
     <div class="footer-contacts">
      <a class="footer-logo">
@@ -285,6 +302,8 @@
        <p><img class="footer-copyright-link" src="img/logo-html.svg" alt="HTMLAcademy"></p>
      </a>
    </div>
+ </div>
+</div>
   </footer>
    <form action="https://echo.htmlacademy.ru" method="post">
     <label for="user-name">Ваше имя:</label>
