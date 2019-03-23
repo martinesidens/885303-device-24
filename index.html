@@ -7,25 +7,26 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <div class="wrap">
-   <header class="main-header">
-     <div class="wrapper">
-   <a class="header-logo" href="index.html">
+    <div class="wrap">
+ <header class="main-header">
+  <div class="wrapper">
+    <a class="header-logo" href="index.html">
        <img src="img\logo-device.svg" alt="Логотип Device">
-     </a>
+    </a>
     <div class="header-user-navigation">
      <ul class="header-user-navigation-link">
        <li>
          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+           <label class="search-header" for="search"></label>
            <input type="search" id="search" class="search-input" placeholder="Поиск по сайту">
            <button type="submit" class="search-button">Найти</button>
-         </form>
+        </form>
        </li>
        <li><a class="header-link header-link-login" href="#">Войти</a></li>
        <li><a class="header-link header-link-logout header-link-hidden" href="#">Выйти</a></li>
        <li><a class="header-link header-link-user header-link-hidden" href="#">User</a></li>
-       <li><a class="header-link header-link-compere " href="#">Сравнить</a></li>
-       <li><a class="header-link header-link-basket " href="#">Корзина</a></li>
+       <li><a class="header-link header-link-compаre" href="#">Сравнить</a></li>
+       <li><a class="header-link header-link-basket" href="#">Корзина</a></li>
      </ul>
    </div>
      <nav class="main-navigation">
@@ -33,6 +34,7 @@
        <li class="nav-submenu main-navigation-catalog">
          <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
          <div class="submenu">
+          <div class="submenu-column">
            <ul>
              <li><a class="submenu-link" href="virtual-reality.html">Виртуальная реальность</a></li>
              <li><a class="submenu-link" href="monopods.html">Моноподы для селфи</a></li>
@@ -53,11 +55,11 @@
      </ul>
     </nav>
   </div>
-   </header>
+ </header>
  </div>
-   <main>
+  <main>
     <div class="wrap">
-      <div class="wrapper">
+    <div class="wrapper">
      <h1 class="visually-hidden">Магазин девайсов Device</h1>
      <section class="main-slider">
        <h2 class="visually-hidden">Самые популярные товары</h2>
@@ -82,7 +84,7 @@
        <table class="slider-table">
          <tr class="second-line">
            <td>8,5 м</td>
-           <td>5 кг</td>
+           <td class="table-item-slide">5 кг</td>
            <td>Карбон</td>
          </tr>
          <tr class="first-line">
@@ -179,42 +181,47 @@
       </ul>
      </section>
    </div>
-     <section class="services-slider">
+     <section>
+       <div class="wrap">
        <h2 class="visually-hidden">Сервисы</h2>
        <div class="visually-hidden">
-         <input type="radio" name="services" id="delivery">
+         <input type="radio" name="services" id="delivery" checked>
          <input type="radio" name="services" id="warranty">
          <input type="radio" name="services" id="credit">
        </div>
-       <div class="left-side-slider">
-       <div  class="btn-style">
-         <label for="#delivery">Доставка</label>
-         <label for="#warranty">Гарантия</label>
-         <label for="#credit">Кредит</label>
+    <div class="services-slider">
+      <div class="left-side-slider">
+       <div  class="btn-services-slider btn-style">
+         <label class="delivery-btn" for="#delivery">Доставка</label>
+         <label class="warranty-btn" for="#warranty">Гарантия</label>
+         <label class="credit-btn" for="#credit">Кредит</label>
        </div>
      </div>
+    <div class="slider-inner">
      <div class="right-side-slider">
-       <div class="services-slide-1">
+       <div class="services-slide services-slide-1">
          <h3 class="headline-slider">Доставка</h3>
          <p class="text-slider">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
            совершенно бесплатно! Ведь мы неплохо заработаем,
            поднимая его на ваш этаж.
          </p>
        </div>
-       <div class="services-slide-2">
+       <div class="services-slide services-slide-2">
          <h3 class="headline-slider">Гарантия</h3>
          <p class="text-slider">Если из-за возгорания купленного у нас товара у вас сгорит дом-
             не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
        </div>
-       <div class="services-slide-3">
+       <div class="services-slide services-slide-3">
          <h3 class="headline-slider">Кредит</h3>
          <p class="text-slider">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
             наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
        </div>
      </div>
-    <div class="wrap">
-     </section>
+   </div>
+ </div>
+    </section>
      <div class="brands">
+      <div class="wrap">
        <h2 class="visually-hidden">Партнеры</h2>
        <ul class="brands-container">
          <li class="brands-link">
@@ -243,13 +250,14 @@
          </li>
        </ul>
       </div>
-      <div class="wrapper">
-     <section class="info">
+     </div>
+     <div class="wrap">
+    <section class="info">
       <div class="about-us">
        <h2>О нас</h2>
-       <p>Огромный выбор гаджетов не оставит равнодушным гика,
+       <p class="about-us-slogan">Огромный выбор гаджетов не оставит равнодушным гика,
          который есть в каждом из нас</p>
-       <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+       <p class="about-us-slogan-two">Мы можем доставить ваш товар в самые отдаленные точки России!
          DEVICE работает со многими транспортными компаниями.</p>
       <ul class="transport-company">
         <li>Деловые Линии</li>
@@ -260,7 +268,7 @@
     </div>
     <div class="contacts">
       <h2>Контакты</h2>
-      <p>
+      <p class="contacts-slogan">
         Вы можете забрать товар сами, заехав в наш офис.
         Заодно, вы можете проверить работоспособность покупки.
         Всякое бывает.
@@ -270,45 +278,47 @@
       </a>
       <a class="btn-style write-to-use" href="#">Напишите нам</a>
     </div>
+  </section>
   </div>
-    </section>
    </main>
    <footer class="main-footer">
   <div class="wrap">
-   <div class="wrapper">
-    <div class="footer-contacts">
+   <div class="footer-container">
+    <div class="footer-user-navigation">
      <a class="footer-logo">
        <img src="img/logo-footer.png" alt="Логотип Device">
      </a>
-     <p>г. Москва, ул. Строителей, 15</p>
+     <ul class="footer-menu">
+       <li><a class="footer-link footer-link-login" href="#">Войти</a></li>
+       <li><a class="footer-link footer-link-logout footer-link-hidden" href="#">Выйти</a></li>
+       <li><a class="footer-link footer-link-user footer-link-hidden" href="#">User</a></li>
+       <li><a class="footer-link footer-link-compere" href="#">Сравнить</a></li>
+       <li><a class="footer-link footer-link-basket" href="#">Корзина</a></li>
+     </ul>
    </div>
+   <div class="footer-social-block">
+     <p>г. Москва, ул. Строителей, 15</p>
      <ul class="footer-social">
         <li><a class="footer-social-item" href="delivery.html">Доставка</a></li>
         <li><a class="footer-social-item" href="warranty.html">Гарантия</a></li>
         <li><a class="footer-social-item" href="contacts.html">Контакты</a></li>
      </ul>
-     <ul class="social-button">
-       <li><a class="social-button-item social-button-vk" href="#" aria-lable="Вконтакте">VK</a></li>
-       <li><a class="social-button-item social-button-fb" href="#" aria-label="Фейсбук">FB</a></li>
-       <li><a class="social-button-item social-button-int" href="#" aria-label="Инстаграм">IN</a></li>
-     </ul>
-    <div class="footer-user-navigation">
-      <ul>
-        <li><a class="footer-link footer-link-login" href="#">Войти</a></li>
-        <li><a class="footer-link footer-link-logout footer-link-hidden" href="#">Выйти</a></li>
-        <li><a class="footer-link footer-link-user footer-link-hidden" href="#">User</a></li>
-        <li><a class="footer-link footer-link-compere " href="#">Сравнить</a></li>
-        <li><a class="footer-link footer-link-basket " href="#">Корзина</a></li>
-      </ul>
      <p>Тел: +7(495)495-95-95</p>
+    </div>
+    <div class="footer-contacts">
+      <ul class="social-button">
+        <li><a class="social-button-item social-button-vk" href="#" aria-lable="Вконтакте">VK</a></li>
+        <li><a class="social-button-item social-button-fb" href="#" aria-label="Фейсбук">FB</a></li>
+        <li><a class="social-button-item social-button-int" href="#" aria-label="Инстаграм">IN</a></li>
+      </ul>
      <a class="footer-copyright" href="https://htmlacademy.ru">
        <p><img class="footer-copyright-link" src="img/logo-html.svg" alt="HTMLAcademy"></p>
      </a>
    </div>
   </div>
  </div>
-  </footer>
-   <form action="https://echo.htmlacademy.ru" method="post">
+ </footer>
+   <form class="write-to-use-form" action="https://echo.htmlacademy.ru" method="post">
     <label for="user-name">Ваше имя:</label>
       <input type="text" id="user-name" placeholder="Имя Фамилия">
     <label for="email-user">Ваш e-mail:</label>
